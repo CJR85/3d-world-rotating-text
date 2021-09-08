@@ -48,6 +48,7 @@ section {
 
 .circle {
   transform-style: preserve-3d;
+  animation: animateText 10s linear infinite;
 }
 
 .circle span {
@@ -61,4 +62,15 @@ section {
   transform-style: preserve-3d;
   padding: 5px 11px;
   transform: rotateY(calc(var(--i) * calc(360deg / 18))) translateZ(200px);
+}
+
+@keyframes animateText {
+  0% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(15deg)
+      translateY(-30px);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(15deg)
+      translateY(-30px);
+  }
 }
