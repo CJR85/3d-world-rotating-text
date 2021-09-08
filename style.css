@@ -61,7 +61,7 @@ section {
   transform-origin: center;
   transform-style: preserve-3d;
   padding: 5px 11px;
-  transform: rotateY(calc(var(--i) * calc(360deg / 18))) translateZ(200px);
+  transform: rotateY(calc(var(--i) * calc(360deg / 19))) translateZ(200px);
   border-top: 4px solid #35146f;
   border-bottom: 4px solid #35146f;
 }
