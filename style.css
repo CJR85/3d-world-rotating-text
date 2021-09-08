@@ -45,3 +45,20 @@ section {
     background-position: -750px 0;
   }
 }
+
+.circle {
+  transform-style: preserve-3d;
+}
+
+.circle span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  color: #35146f;
+  font-size: 3em;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  padding: 5px 11px;
+  transform: rotateY(calc(var(--i) * calc(360deg / 18))) translateZ(200px);
+}
